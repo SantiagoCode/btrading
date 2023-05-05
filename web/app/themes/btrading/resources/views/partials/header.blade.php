@@ -1,17 +1,33 @@
-<nav class="navbar is-fixed-top is-spaced is-white vertical-header" role="navigation" data-cursor-stick data-cursor="-menu">
-  <a href="{{home_url()}}" class="name is-size-7 has-text-dark"
-    style="writing-mode: vertical-lr;
-    transform: rotate(180deg);">
-    <span>Amerinode <b>Latam</b></span>
-  </a>
-  <div class="menu-trigger">
-    <a id="open_menu" class="icon has-text-dark"><i data-feather="menu"></i></a>
+<nav class="navbar is-fixed-top is-spaced" role="navigation" data-cursor-stick data-cursor="-menu" style="background: transparent;">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <div class="menu-trigger">
+        <a id="open_menu" class="icon has-text-dark">
+          <img src="@asset('images/navbar-logo.png')" alt="">
+        </a>
+      </div>
+    </a>
   </div>
-  <div class="call-to-action is-size-7 has-text-grey"
-    style="writing-mode: vertical-lr;
-    transform: rotate(180deg);">
-    <span clas="icon"><i data-feather="chevron-up"></i></span>
-    <span>Scroll</span>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start has-margin-auto">
+      <a class="navbar-item">
+        <a href="{{home_url()}}" class="name is-size-7 has-text-primary">
+          <span>TRADING MARKETING AGENCY</span>
+        </a>
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div id="open_menu" class="call-to-action is-size-7 has-text-grey has-text-primary">
+          <span class="has-text-primary">menú</span>
+          <i class="icon has-margin-left-10">
+            <img src="@asset('images/menu.png')" alt="">
+          </i>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
 

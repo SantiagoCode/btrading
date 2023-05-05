@@ -28,6 +28,9 @@ $satellite-color-text:#fff !default;
         background:currentColor;
         border-radius:50%;
 
+        opacity: 0.9 !important;
+        filter: blur(1px);
+
         transition:transform 0.25s ease-in-out, opacity 0.1s;
     }
 
@@ -54,7 +57,7 @@ $satellite-color-text:#fff !default;
     &.-text {
         &:before {
             opacity:0.85;
-            transform:scale(1.7);
+            transform:scale(4);
         }
 
         &.-active:before {
@@ -91,7 +94,7 @@ $satellite-color-text:#fff !default;
         transform:scale(0) rotate(10deg);
 
         opacity:0;
-        color:$satellite-color-text;
+        color:$light;
 
         font-size:16px;
         line-height:20px;

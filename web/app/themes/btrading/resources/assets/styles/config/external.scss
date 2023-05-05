@@ -30,3 +30,57 @@ strong {
 *:focus {
     outline: unset !important;
 }
+
+section {
+    min-height: 100vh;
+    padding: 60px 10px;
+    overflow: hidden;
+}
+
+// Buttons
+
+.planet-button-primary {
+    @include planet-button($primary);
+}
+
+.planet-button-dark {
+ @include planet-button($dark);
+}
+
+.planet-button-light {
+    @include planet-button($light);
+}
+
+// Estilos improvisados por la contingencia de la fuente fluida que no fluye 
+
+.is-fluid {
+    container-type: inline-size;
+    
+    h1 {
+        font-size: calc(5vw + 2cqi);
+    }
+  }
+
+// 
+
+// *
+
+.cinema-light {
+    position: absolute;
+    bottom: calc(0px - 21vh);
+    pointer-events: none;
+    left: 25%;
+    width: 50vw;
+    height: 41vh;
+    background-color: $primary;
+    filter: blur(36px);
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+.conjunto-hero {
+    position: absolute;
+    bottom: 8%;
+    left: calc(50% - 12vw);
+    width: 24vw;
+}
