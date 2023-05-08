@@ -1,4 +1,4 @@
-<div class="pseudo-planet">
+{{-- <div class="pseudo-planet">
     <div class="1">1</div>
     <div class="2"></div>
     <div class="3"></div>
@@ -12,4 +12,4 @@
 
 <style>
 
-</style>
+</style> --}}

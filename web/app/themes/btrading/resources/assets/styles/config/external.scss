@@ -37,33 +37,7 @@ section {
     overflow: hidden;
 }
 
-// Buttons
-
-.planet-button-primary {
-    @include planet-button($primary);
-}
-
-.planet-button-dark {
- @include planet-button($dark);
-}
-
-.planet-button-light {
-    @include planet-button($light);
-}
-
-// Estilos improvisados por la contingencia de la fuente fluida que no fluye 
-
-.is-fluid {
-    container-type: inline-size;
-    
-    h1 {
-        font-size: calc(5vw + 2cqi);
-    }
-  }
-
 // 
-
-// *
 
 .cinema-light {
     position: absolute;

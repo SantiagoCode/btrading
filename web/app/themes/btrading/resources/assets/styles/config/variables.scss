@@ -16,28 +16,28 @@ $theme-colors: (
   light: $light
 );
 
+// Fonts Variables
+$font-size-diff: 0.3;
 
- // Fonts Variables
+// h1
+$main-title: 6rem;
 
- $font-size-diff: 0.3;
+// h2
+$title: 4rem;
 
- // h1
- $main-title: 6rem;
- // h2
- $title: 4rem;
- // h3
- $subtitle: 3rem;
- // h4
- $caption: 2rem;
+// h3
+$subtitle: 3rem;
+
+// h4
+$caption: 2rem;
+
+// calculate h1
+$main-title-base: 3rem;
+
+// calculate h2
+$title-base: 2rem;
  
- // calculate h1
- $main-title-base: 3rem;
- // calculate h2
- $title-base: 2rem;
- 
- // 
- 
-
+// 
 
 $body-family: 'Helvetica Neue','Helvetica','Roboto', sans-serif;
 $body-size: 18px;
@@ -48,26 +48,5 @@ $body-size: 18px;
 
   &:not([data-aos-duration]) {
       transition-duration: 1s !important;
-  }
-}
-
-
-// MIXINS
-
-@mixin planet-button($font-color) {
-  color: $font-color;
-  display: flex;
-  margin-right: 40px;
-  align-items: center;
-  transition: .3s;
-
-  .icon {
-      margin-right: 15px;
-  }
-
-  &:hover {
-    color: $font-color !important;
-    transform: rotate(-3deg);
-    transition: .3s;
   }
 }

@@ -4,7 +4,7 @@
 
     <div class="cinema-light"></div>
 
-    <div class="hero-body is-fluid">
+    <div class="hero-body container-is-fluid">
 
         <a class="planet-button-light is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30" href="" data-inertia data-inertia-reveal data-inertia-delay="300">
           <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
@@ -16,11 +16,11 @@
         </h1>
 
         <div class="control-buttons columns is-multiline" data-inertia data-inertia-reveal data-inertia-delay="700">
-          <a class="column is-4-desktop is-3-widescreen is-10-touch planet-button-primary is-size-7 is-size-6-fullhd over-overlay" href="">
+          <a class="column is-4-desktop is-3-widescreen is-10-touch planet-button-primary is-size-7 is-size-6-fullhd over-overlay title is-fluid-4" href="">
             <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
             <span>La única agencia de marketing especializada en el sector de las inversiones financieras y el trading</span>
           </a>
-          <a class="column is-4-desktop is-3-widescreen is-10-touch planet-button-primary is-size-7 is-size-6-fullhd over-overlay" href="">
+          <a class="column is-4-desktop is-3-widescreen is-10-touch planet-button-primary is-size-7 is-size-6-fullhd over-overlay title is-fluid-4" href="">
             <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
             <span>Con más de 9 años de experiencia para hacer crecer a tu negocio.</span>
           </a>
