@@ -3,6 +3,9 @@
 @include('partials.menu')
 <div data-inertia-container>
   <main data-inertia-section class="main">
+
+    <div class="cinema-light"></div>
+
     <div data-solar="container">
       @yield('content')
     </div>

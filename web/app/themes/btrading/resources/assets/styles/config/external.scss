@@ -40,16 +40,17 @@ section {
 // 
 
 .cinema-light {
-    position: absolute;
+    position: fixed;
     bottom: calc(0px - 21vh);
     pointer-events: none;
     left: 25%;
     width: 50vw;
     height: 41vh;
-    background-color: $primary;
+    background-color: #0CF0FF;
     filter: blur(36px);
     border-radius: 50%;
     opacity: 0.4;
+    z-index: 9;
 }
 
 .conjunto-hero {
@@ -58,3 +59,75 @@ section {
     left: calc(50% - 12vw);
     width: 24vw;
 }
+
+.sistema-solar {
+    position: absolute;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vh;
+    left: calc(50vw - 50vh);
+    top: 0;
+    overflow: hidden;
+
+    animation: showSelf 2s ;
+
+    .planeta {
+        position: absolute;
+        height: 100%;
+        border: 1px solid $primary;
+        border-radius: 50%; 
+
+        &.mercurio {
+            width: 100%;
+            left: 0%;
+        }
+
+        &.venus {
+            width: 98%;
+            left: 1%;
+        }
+
+        &.tierra {
+            width: 96%;
+            left: 2%;
+        }
+
+        &.marte {
+            width: 94%;
+            left: 3%;
+        }
+
+        &.jupiter {
+            width: 92%;
+            left: 4%;
+        }
+
+        &.saturno {
+            width: 90%;
+            left: 5%;
+        }
+
+        &.neptuno {
+            width: 88%;
+            left: 6%;
+        }
+    }
+
+    .pluton {
+        position: absolute;
+        bottom: -20%;
+        width: 100%;
+        height: 50%;
+        background: $dark;
+        filter: blur(22px);
+    }
+ }
+
+ @keyframes showSelf {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }

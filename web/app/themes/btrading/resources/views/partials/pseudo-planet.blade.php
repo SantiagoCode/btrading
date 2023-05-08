@@ -1,15 +1,17 @@
-{{-- <div class="pseudo-planet">
-    <div class="1">1</div>
-    <div class="2"></div>
-    <div class="3"></div>
+<div class="sistema-solar">
+    <div class="planeta mercurio"></div>
+    <div class="planeta venus"></div>
+    <div class="planeta tierra"></div>
 
-    <div class="4"></div>
-    <div class="5"></div>
-    <div class="6"></div>
+    <div class="planeta marte"></div>
+    <div class="planeta jupiter"></div>
+    <div class="planeta saturno"></div>
 
-    <div class="7">7</div>
+    <div class="planeta neptuno"></div>
+
+    <div class="pluton"></div>
 </div>
 
 <style>
 
-</style> --}}
+</style>
