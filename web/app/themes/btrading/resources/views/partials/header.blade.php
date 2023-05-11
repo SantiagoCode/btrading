@@ -1,4 +1,4 @@
-<nav class="navbar is-flex is-fixed-top columns is-justify-content-space-between has-padding-50-desktop has-padding-30-touch" data-cursor-stick data-cursor="-menu" style="background: transparent;">
+<nav class="navbar is-flex is-fixed-top columns is-justify-content-space-between has-padding-50-desktop has-padding-30-touch" data-cursor-stick data-cursor="-menu" style="background: transparent; mix-blend-mode: difference;">
   <div class="column is-4 is-flex is-align-items-center">
     <a id="open_menu" class="icon has-text-dark">
       <img src="@asset('images/navbar-logo.png')" alt="">

@@ -1,20 +1,20 @@
 <section id="servicios" class="no-margin-section is-flex is-relative is-align-items-center has-background-primary is-full-height is-dark" data-cursor="-reverso" data-cursor-text="Empieza Ahora">
-
-    <div class="container">
+    
+    <div class="container" data-inertia data-inertia-speed="-1">
 
         <div class="has-padding-bottom-90-widescreen">
-            <a class="planet-button-dark is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30" href="" data-inertia data-inertia-reveal data-inertia-delay="300">
+            <a class="planet-button-dark is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
                 <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                 <span class="">Servicios</span>
             </a>
-            <h1 class="calculate has-text-dark has-margin-bottom-40" >
+            <h1 class="calculate has-text-dark has-margin-bottom-40" data-inertia data-inertia-reveal data-inertia-delay="400">
                 Qué podemos <span class="has-text-weight-bold">hacer</span> por ti
             </h1>
         </div>
 
         <div class="columns is-centered is-multiline">
-            <div class="column is-4-desktop is-12-mobile">
-                <a class="planet-button-dark with-content" href="">
+            <div class="column is-4-desktop is-12-mobile" data-inertia data-inertia-reveal data-inertia-delay="700">
+                <div class="planet-button-dark with-content" href="">
                     <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                     <span class="">
                         <span class="has-text-weight-bold">
@@ -31,11 +31,11 @@
                             <span class="cotizar has-text-weight-bold" style="flex: none;">cotizar*</span>
                         </div>
                     </span>
-                </a>
+                </div>
             </div>
 
-            <div class="column is-4-desktop is-12-mobile">
-                <a class="planet-button-dark with-content" href="">
+            <div class="column is-4-desktop is-12-mobile" data-inertia data-inertia-reveal data-inertia-delay="800">
+                <div class="planet-button-dark with-content" href="">
                     <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                     <span class="">
                         <span class="has-text-weight-bold">
@@ -52,11 +52,11 @@
                             <span class="cotizar has-text-weight-bold" style="flex: none;">cotizar*</span>
                         </div>
                     </span>
-                </a>
+                </div>
             </div>
 
-            <div class="column is-4-desktop is-12-mobile">
-                <a class="planet-button-dark with-content" href="">
+            <div class="column is-4-desktop is-12-mobile" data-inertia data-inertia-reveal data-inertia-delay="900">
+                <div class="planet-button-dark with-content" href="">
                     <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                     <span class="">
                         <span class="has-text-weight-bold">
@@ -73,10 +73,10 @@
                             <span class="cotizar has-text-weight-bold" style="flex: none;">cotizar*</span>
                         </div>
                     </span>
-                </a>
+                </div>
             </div>
 
         </div>
     </div>
-
+    
 </section>

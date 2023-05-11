@@ -3,31 +3,44 @@
     @include('partials.pseudo-planet')
 
 
-    <div class="hero-body container-is-fluid">
+    <div class="hero-body container-is-fluid" data-inertia data-inertia-speed="-1">
 
-        <a class="planet-button-light is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30" href="" data-inertia data-inertia-reveal data-inertia-delay="300">
+        <a class="planet-button-light is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
           <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
           <span class="">Esto es BTrading</span>
         </a>
 
-        <h1 class="calculate has-text-light has-margin-bottom-40" >
+        <h1 class="calculate has-text-light has-margin-bottom-40" data-inertia data-inertia-reveal data-inertia-delay="400">
           Llevando la <span class="has-text-weight-bold">Web3</span> Adelante
         </h1>
 
         <div class="control-buttons columns is-multiline" data-inertia data-inertia-reveal data-inertia-delay="700">
-          <a class="column is-4-desktop is-3-widescreen is-10-touch planet-button-primary is-size-7 is-size-6-fullhd over-overlay is-fluid-4" href="">
-            <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
-            <span class="">La única agencia de marketing especializada en el sector de las inversiones financieras y el trading</span>
-          </a>
-          <a class="column is-4-desktop is-3-widescreen is-10-touch planet-button-primary is-size-7 is-size-6-fullhd over-overlay is-fluid-4" href="">
-            <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
-            <span class="">Con más de 9 años de experiencia para hacer crecer a tu negocio.</span>
-          </a>
+          <div class="column is-4-desktop is-3-widescreen is-10-touch planet-button-primary is-size-7 is-size-6-fullhd over-overlay is-fluid-4 with-content" href="">
+              <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
+              <span class="">
+                  <span class="has-text-weight-bold">
+                  </span>
+                  <p class="servicios-content">
+                    La única agencia de marketing especializada en el sector de las inversiones financieras y el trading
+                  </p>
+              </span>
+          </div>
+
+          <div class="column is-4-desktop is-3-widescreen is-10-touch planet-button-primary is-size-7 is-size-6-fullhd over-overlay is-fluid-4 with-content" href="">
+              <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
+              <span class="">
+                  <span class="has-text-weight-bold">
+                  </span>
+                  <p class="servicios-content">
+                    Con más de 9 años de experiencia para hacer crecer a tu negocio.
+                  </p>
+              </span>
+          </div>
         </div>
           
       </div>
 
-      <div class="conjunto-hero is-flex is-justify-content-center">
+      <div class="conjunto-hero is-flex is-justify-content-center" data-inertia data-inertia-speed="-1" data-inertia-reveal data-inertia-delay="700">
         <img src="@asset('images/conjunto-hero.png')" alt="img">
       </div>
 

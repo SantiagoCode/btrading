@@ -5,15 +5,15 @@
 
 <section id="footer" class="footer is-full-height has-background-dark">
 
-  <div class="container">
+  <div class="container" data-inertia data-inertia-speed="-1">
     
     <img class="has-margin-bottom-40-desktop has-margin-bottom-20-touch" src="@asset('images/logo.png')" alt="logo btrading">
     
-    <h1 class="calculate has-text-light has-margin-bottom-40-desktop has-margin-bottom-20-touch">
+    <h1 class="calculate has-text-light has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="200">
       ¿Qué esperas para cambiar tu futuro financiero?
     </h1>
 
-    <div class="columns redes is-mobile has-margin-bottom-40-desktop has-margin-bottom-20-touch">
+    <div class="columns redes is-mobile has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="300">
       <div class="column">
         <a href="">
           <img src="@asset('images/icono-youtube.png')" alt="Youtube">
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="politicasyderechos">
+    <div class="politicasyderechos" data-inertia data-inertia-reveal data-inertia-delay="400">
       <a class="legalidades has-margin-right-40 has-text-light">
         Política de privacidad
       </a>
