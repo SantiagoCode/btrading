@@ -1,0 +1,12 @@
+.redes {
+    width: clamp(250px, 40%, 400px);
+
+    .column {
+        transition: 0.4s;
+        
+        a:hover {
+            transform: scale(1.1);
+            transition: 0.4s;
+        }
+    }
+}

@@ -35,8 +35,21 @@ section {
     min-height: 100vh;
     padding: 60px 10px;
     overflow: hidden;
+    margin-bottom: 12%;
+
+    &:nth-last-child(1) {
+        margin-bottom: 20px;
+    }
+    
 }
 
+h1, h2 {
+    line-height: 1;;
+}
+
+.planet-button-primary.with-content, .planet-button-dark.with-content, .planet-button-light.with-content {
+    align-items: start;
+}
 // 
 
 .cinema-light {
@@ -53,11 +66,15 @@ section {
     z-index: 9;
 }
 
-.conjunto-hero {
+.earth-nosotros {
     position: absolute;
-    bottom: 8%;
-    left: calc(50% - 12vw);
-    width: 24vw;
+    height: 128vh;
+    width: 128vh;
+    border-radius: 50%;
+    left: calc(50vw - 64vh);
+    top: 0;
+
+    max-width: unset !important;
 }
 
 .sistema-solar {
@@ -70,6 +87,15 @@ section {
     overflow: hidden;
 
     animation: showSelf 2s;
+
+    &.inverse {
+        transform: rotate(170deg);
+
+        .pluton {
+            height: 32vh;
+            border-radius: 50%;
+        }
+    }
 
     .planeta {
         position: absolute;

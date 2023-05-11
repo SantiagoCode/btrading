@@ -1,4 +1,4 @@
-<section data-cursor="-inverse" class="is-flex is-align-items-center has-background-dark is-full-height is-primary" data-cursor-text="Empieza Ahora">
+<section id="hero" data-cursor="-inverse" class="is-flex is-relative is-align-items-center has-background-dark is-full-height is-primary" data-cursor-text="Empieza Ahora">
   
     @include('partials.pseudo-planet')
 

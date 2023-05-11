@@ -1,0 +1,7 @@
+#nosotros {
+    height: 130vh !important;
+    
+    .container .calculate {
+        width: clamp(270px, 50vw, 540px);
+    }
+}

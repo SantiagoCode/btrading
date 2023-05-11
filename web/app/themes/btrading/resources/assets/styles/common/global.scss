@@ -46,6 +46,19 @@ a {
 
   }
 
+  &.-reverso {
+
+    &:before{
+      background-color: $light;
+      opacity: 1;
+    }
+
+    .satellite-cursor-text {
+      color: $dark;
+    }
+
+  }
+
   &.-icon {
     &:before {
       height: 45px;

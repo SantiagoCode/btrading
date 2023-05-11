@@ -42,7 +42,7 @@
   </div>
 </div>
 
-<script>
+{{-- <script>
   const menu = document.querySelector('#full_menu');
   const trigger = document.querySelector('#open_menu');
 
@@ -64,4 +64,4 @@
   })
 
   if(!menu.classList.contains('is-disabled')) document.querySelectorAll('a').forEach(element=> { element.onclick = () => {menu_action()} })
-</script>
+</script> --}}

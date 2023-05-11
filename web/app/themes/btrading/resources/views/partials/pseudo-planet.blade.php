@@ -11,7 +11,3 @@
 
     <div class="pluton"></div>
 </div>
-
-<style>
-
-</style>
