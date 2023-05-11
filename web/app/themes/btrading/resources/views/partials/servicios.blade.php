@@ -1,4 +1,4 @@
-<section id="servicios" class="is-flex is-relative is-align-items-center has-background-primary is-full-height is-dark" data-cursor="-reverso" data-cursor-text="Empieza Ahora">
+<section id="servicios" class="no-margin-section is-flex is-relative is-align-items-center has-background-primary is-full-height is-dark" data-cursor="-reverso" data-cursor-text="Empieza Ahora">
 
     <div class="container">
 

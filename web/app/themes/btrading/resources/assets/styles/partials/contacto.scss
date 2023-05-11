@@ -1,0 +1,53 @@
+.formulario {
+    width: clamp(270px, 60%, 800px);
+
+    .form-item, .form-item-textarea {
+        border-radius: 10px;
+        
+        input {
+            background: transparent !important;
+            border: none !important;
+            border-bottom: 2px solid $primary !important;
+            
+            &::placeholder {
+                color: $light !important;
+            }
+        }
+
+        textarea {
+            background: transparent !important;
+            border: 2px solid $primary;
+                        
+            &::placeholder {
+                color: $light !important;
+            }
+        }
+    }
+
+    .form-item-radiobtn div {
+        
+        input[type="checkbox"], input[type="checkbox"]:disabled, input[type="checkbox"]:disabled:checked {
+            appearance: none;
+            background: transparent !important;
+            border: 1px solid $primary;
+            border-radius: 50%;
+            margin-right: 24px;
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+
+            &:checked {
+
+                &:before {
+                    content: url('./../images/check.svg');
+                    position: absolute;
+                    background-color: $primary;
+                    border-radius: 50%;
+                    width: 18px;
+                    height: 18px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

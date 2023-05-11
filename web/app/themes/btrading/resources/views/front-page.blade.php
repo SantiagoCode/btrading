@@ -6,6 +6,6 @@
 @include('partials.xmove')
 @include('partials.servicios')
 
-@include('partials.formulario')
+@include('partials.contacto')
 @include('partials.footer')
 @endsection

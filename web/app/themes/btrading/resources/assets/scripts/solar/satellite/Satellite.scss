@@ -29,7 +29,7 @@ $satellite-color-text:#fff !default;
         border-radius:50%;
 
         opacity: 0.9 !important;
-        filter: blur(1px);
+        backdrop-filter: blur(2px);
 
         transition:transform 0.25s ease-in-out, opacity 0.1s;
     }
