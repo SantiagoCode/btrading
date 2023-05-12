@@ -48,7 +48,8 @@ section {
 }
 
 h1, h2 {
-    line-height: 1;;
+    line-height: 1;
+    word-wrap: break-word;
 }
 
 .planet-button-primary.with-content, .planet-button-dark.with-content, .planet-button-light.with-content {
