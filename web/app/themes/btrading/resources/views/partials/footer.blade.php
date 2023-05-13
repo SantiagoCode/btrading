@@ -14,21 +14,15 @@
     </h1>
 
     <div class="columns redes is-mobile has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="300">
-      <div class="column">
-        <a href="">
-          <img src="@asset('images/icono-youtube.png')" alt="Youtube">
-        </a>
-      </div>
-      <div class="column">
-        <a href="">
-          <img src="@asset('images/icono-facebook.png')" alt="Facebook">
-        </a>
-      </div>
-      <div class="column">
-        <a href="">
-          <img src="@asset('images/icono-instagram.png')" alt="Instagram">
-        </a>
-      </div>
+      <a class="column">
+        <img src="@asset('images/icono-youtube.png')" alt="Youtube">
+      </a>
+      <a class="column">
+        <img src="@asset('images/icono-facebook.png')" alt="Facebook">
+      </a>
+      <a class="column">
+        <img src="@asset('images/icono-instagram.png')" alt="Instagram">
+      </a>
     </div>
 
     <div class="politicasyderechos" data-inertia data-inertia-reveal data-inertia-delay="400">

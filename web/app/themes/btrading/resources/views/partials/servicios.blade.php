@@ -3,10 +3,10 @@
     <div class="container" data-inertia data-inertia-speed="-1">
 
         <div class="has-padding-bottom-90-widescreen">
-            <a class="planet-button-dark is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
+            <div class="planet-button-dark is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30 has-text-weight-bold" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
                 <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                 <span class="">Servicios</span>
-            </a>
+            </div>
             <h1 class="calculate has-text-dark has-margin-bottom-40" data-inertia data-inertia-reveal data-inertia-delay="400">
                 Qué podemos <span class="has-text-weight-bold">hacer</span> por ti
             </h1>

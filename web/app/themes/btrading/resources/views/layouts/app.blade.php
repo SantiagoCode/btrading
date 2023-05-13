@@ -6,7 +6,7 @@
   <div class="cinema-light"></div>
 
   <main data-inertia-section class="main">
-    <div class="has-background-dark" data-solar="container">
+    <div class="has-background-dark" data-solar="container" style="overflow: hidden;">
       @yield('content')
     </div>
   </main>

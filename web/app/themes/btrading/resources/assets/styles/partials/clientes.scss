@@ -1,31 +1,105 @@
-.people-container {
-    position: relative;
-    height: 100vh;  
+#clientes {
 
-    img {
-    position: absolute;
-    height: auto;
-    bottom: 0;
-      
-      &.jon {
-        width: clamp(100px, 30vw, 30vw);
-        left: calc(50% - 35vw);
-        z-index: 2;
-      }
-      
-      &.barbara {
-        width: clamp(100px, 37vw, 37vw);
-        left: calc(50% - (42vw / 2));
-        z-index: 3;
-      }
-      
-      &.guillermo {
-        width: clamp(100px, 30vw, 30vw);
-        left: 50%;
-        z-index: 2;
-      }      
-    }
+.scrollClientes, .scrollExito {
+  position: absolute;
+  height: 20vh;
+  width: fit-content;
+  z-index: 3;
+
+  h1 {
+    font-size: calc(2rem + 17cqi);
+  }
 }
-  
 
+.scrollClientes {
+  bottom: 50%;
+  left: 0;
+}
+
+.scrollExito {
+  bottom: 10%;
+  right: 0;
+}
+
+.container {
+
+  .planet-button-dark {
+    position: absolute;
+    top: 25%;
+  }
+
+    .people-container {
+      position: relative;
+      height: 100vh;  
   
+      .barbara, .jon, .guillermo {
+        display: flex;
+        position: absolute;
+        height: auto;
+        bottom: 0;
+
+        & .cliente {
+          height: 100%;
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+      
+      .barbara {
+        height: clamp(100px, 70vh, 70vh);
+        z-index: 5;
+        width: max-content;
+        
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        & .detallesCliente {
+          left: 50%;  
+          top: calc(0px - 180px);
+        }
+      }
+      
+      .jon {
+        height: clamp(100px, 60vh, 60vh);
+        right: 55%;
+        z-index: 4;
+        width: max-content;
+
+        
+        & .detallesCliente {
+          left: calc(0px - 150px);
+          top: 30% !important;
+        }
+      }
+      
+      .guillermo {
+        height: clamp(100px, 60vh, 60vh);
+        left: 55%;
+        z-index: 2;
+        width: max-content;
+        
+        & .detallesCliente {          
+          right: calc(0px - 150px);
+          top: 30% !important;
+        }
+      }  
+    }
+  }
+}
+    
+.detallesCliente {
+  position: absolute;
+  width: 250px;
+  height: 180px;
+  z-index: 9;
+}
+
+@media only screen and (max-width: 768px)  {
+  
+  .barbara {
+    height: clamp(100px, 70vh, 70vh) !important;
+    left: calc(50% - (70vh / 2)) !important;
+    z-index: 1 !important;
+  }
+}
