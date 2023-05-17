@@ -5,7 +5,7 @@
 
 <section id="footer" class="footer is-full-height has-background-dark">
 
-  <div class="container" data-inertia data-inertia-speed="-1">
+  <div class="container">
     
     <img class="has-margin-bottom-40-desktop has-margin-bottom-20-touch" src="@asset('images/logo.png')" alt="logo btrading">
     

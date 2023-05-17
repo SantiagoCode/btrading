@@ -1,6 +1,7 @@
 @include('partials.loader')
 @include('partials.header')
 @include('partials.menu')
+@include('partials.cotizacion')
 <div data-inertia-container>
   
   <div class="cinema-light"></div>
