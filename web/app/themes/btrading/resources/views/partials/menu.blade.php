@@ -1,4 +1,4 @@
-<div id="full_menu" class="full-menu is-overlay is-disabled" style="z-index: 9">
+<div id="full_menu" class="full-menu is-overlay is-disabled" style="z-index: 999; position: fixed;">
   <div class="hero is-fullheight is-dark">
     <div class="is-overlay" style="mix-blend-mode: lighten">
       <div class="fibra-optica column is-3 is-paddingless is-offset-9">
@@ -21,10 +21,12 @@
             </ul>
           </div>
           <div class="column is-4">
-            <div data-inertia data-inertia-reveal data-inertia-delay="100"  class="title is-7">Iniciativas Amerinode</div>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="200" href="/como-llevamos-la-tecnologia-a-las-comunidades" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block">Cómo llevamos tecnología a las comunidades</a>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="300"  href="/blog" data-cursor-text="Ir al Blog" class="is-size-7 is-block">- Y decenas de más historias de éxito en nuestro blog. </a>
-            <div data-inertia data-inertia-reveal data-inertia-delay="400"  data-inertia data-inertia-reveal data-inertia-delay="500"  class="title is-7 has-margin-bottom-10 has-margin-top-105">Visítenos</div>
+            <div data-inertia data-inertia-reveal data-inertia-delay="100"  class="title is-7">Btrading</div>
+            <a  data-inertia data-inertia-reveal data-inertia-delay="200" href="/como-llevamos-la-tecnologia-a-las-comunidades" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block">Influencers</a>
+            <a  data-inertia data-inertia-reveal data-inertia-delay="300"  href="/blog" data-cursor-text="Ir al Blog" class="is-size-7 is-block">- Conecta con tu audiencia de manera auténtica y efectiva. </a>
+            <a  data-inertia data-inertia-reveal data-inertia-delay="200" href="/como-llevamos-la-tecnologia-a-las-comunidades" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block">Afiliaciones</a>
+            <a  data-inertia data-inertia-reveal data-inertia-delay="300"  href="/blog" data-cursor-text="Ir al Blog" class="is-size-7 is-block">- Haz crecer tus ingresos con la afiliación. </a>
+            <div data-inertia data-inertia-reveal data-inertia-delay="400"  data-inertia data-inertia-reveal data-inertia-delay="500"  class="title is-7 has-margin-bottom-10 has-margin-top-30">Visítenos</div>
             <a  data-inertia data-inertia-reveal data-inertia-delay="500" class="is-block" href="https://maps.google.es/maps?daddr=CARRERA%207%2071%2052%20TO%20A%20OF%20504,BOGOTA%20-%20BOGOTA,%20Colombia" target="_blank">Carrera 7 # 71 - 52 Torre B Piso 15, Bogota</a>
             <div data-inertia data-inertia-reveal data-inertia-delay="600"  class="title is-7 has-margin-bottom-10 has-margin-top-30 ">O Escríbanos</div>
             <a class="is-block" data-inertia data-inertia-reveal data-inertia-delay="700"  href="mailto:info@latam.amerinode.com">info@latam.amerinode.com</a>
@@ -32,36 +34,21 @@
         </div>
       </div>
     </div>
-    <div class="hero-footer">
-      <div class="hero-body">
+    
+    <div class="hero-footer" style="max-height: 150px">
         <div class="container">
-          <a data-gravity href="https://www.linkedin.com/company/amerinode/" class="button is-white is-outlined"><span class="icon"><i data-feather="linkedin"></i></span></a>
+          <div class="columns redes is-mobile has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="300">
+            <a class="column">
+              <img src="@asset('images/icono-youtube.png')" alt="Youtube">
+            </a>
+            <a class="column">
+              <img src="@asset('images/icono-facebook.png')" alt="Facebook">
+            </a>
+            <a class="column">
+              <img src="@asset('images/icono-instagram.png')" alt="Instagram">
+            </a>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </div>
-
-{{-- <script>
-  const menu = document.querySelector('#full_menu');
-  const trigger = document.querySelector('#open_menu');
-
-  const menu_action = () => {
-    menu.classList.toggle('is-disabled');
-    menu.querySelectorAll('[data-inertia-reveal]').forEach(element => {
-      element.classList.toggle('is-revealed');
-    });
-  }
-
-  trigger.onclick = () => {
-    menu_action()
-  }
-
-  menu.querySelectorAll('a').forEach(element => {
-    element.onclick = () => {
-      menu_action()
-    }
-  })
-
-  if(!menu.classList.contains('is-disabled')) document.querySelectorAll('a').forEach(element=> { element.onclick = () => {menu_action()} })
-</script> --}}
