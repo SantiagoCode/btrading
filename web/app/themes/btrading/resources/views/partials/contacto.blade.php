@@ -16,7 +16,7 @@
     </div>
 
 
-    <div class="container" data-inertia data-inertia-speed="-1">
+    <div class="container">
 
         <div class="has-padding-bottom-90-widescreen">
 

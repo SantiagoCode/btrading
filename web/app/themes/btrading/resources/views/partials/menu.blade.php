@@ -32,23 +32,23 @@
             <a class="is-block" data-inertia data-inertia-reveal data-inertia-delay="700"  href="mailto:info@latam.amerinode.com">info@latam.amerinode.com</a>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="hero-footer" style="max-height: 150px">
-        <div class="container">
-          <div class="columns redes is-mobile has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="300">
-            <a class="column">
-              <img src="@asset('images/icono-youtube.png')" alt="Youtube">
-            </a>
-            <a class="column">
-              <img src="@asset('images/icono-facebook.png')" alt="Facebook">
-            </a>
-            <a class="column">
-              <img src="@asset('images/icono-instagram.png')" alt="Instagram">
-            </a>
-          </div>
+        
+        <div class="hero-footer has-margin-left-30-touch" style="max-height: 150px">
+            <div class="container">
+              <div class="columns redes is-mobile has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="300">
+                <a class="column">
+                  <img src="@asset('images/icono-youtube.png')" alt="Youtube">
+                </a>
+                <a class="column">
+                  <img src="@asset('images/icono-facebook.png')" alt="Facebook">
+                </a>
+                <a class="column">
+                  <img src="@asset('images/icono-instagram.png')" alt="Instagram">
+                </a>
+              </div>
+            </div>
         </div>
+      </div>
     </div>
   </div>
 </div>

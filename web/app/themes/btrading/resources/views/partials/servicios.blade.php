@@ -1,6 +1,6 @@
 <section id="servicios" class="no-margin-section is-flex is-relative is-align-items-center has-background-primary is-full-height is-dark" data-cursor="-reverso" data-cursor-text="Empieza Ahora">
     
-    <div class="container" data-inertia data-inertia-speed="-1">
+    <div class="container">
 
         <div class="has-padding-bottom-90-widescreen">
             <div class="planet-button-dark is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30 has-text-weight-bold" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
