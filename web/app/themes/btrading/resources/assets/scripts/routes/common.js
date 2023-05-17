@@ -76,6 +76,8 @@ export default {
         });
       });
     });
+
+    // send data to setup.php
   },
   finalize() {
     Solar.start();
