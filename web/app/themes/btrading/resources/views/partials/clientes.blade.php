@@ -20,7 +20,7 @@
                 <img src="@asset('images/barbara.png')" alt="" class="cliente"  data-inertia data-inertia-reveal data-inertia-delay="700">
 
                 <div class="detallesCliente planet-button-dark is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30 has-text-weight-bold is-hidden-touch" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
-                    <div class="planet-button-dark with-content">
+                    <div class="planet-button-dark with-content is-clickable">
                         <span class="">                      
                             <span class="has-text-weight-bold">
                                 Barbara
@@ -38,7 +38,7 @@
                 <img src="@asset('images/jon.png')" alt="" class="cliente"  data-inertia data-inertia-reveal data-inertia-delay="800">
 
                 <div class="detallesCliente planet-button-dark is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30 has-text-weight-bold is-hidden-touch" href="" data-inertia data-inertia-reveal data-inertia-delay="200">               
-                    <div class="planet-button-dark with-content has-text-align-right">
+                    <div class="planet-button-dark with-content has-text-align-right is-clickable">
                         <span class="">                        
                             <span class="icon is-block has-margin-left-auto mr-0"><i data-feather="circle"></i></span>                        
                             <span class="has-text-weight-bold">
@@ -56,7 +56,7 @@
                 <img src="@asset('images/guillermo.png')" alt="" class="cliente"  data-inertia data-inertia-reveal data-inertia-delay="900">
 
                 <div class="detallesCliente planet-button-dark is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30 has-text-weight-bold is-hidden-touch" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
-                    <div class="planet-button-dark with-content">
+                    <div class="planet-button-dark with-content is-clickable">
                         <span class="">
                             <span class="icon has-margin-right-20 is-block"><i data-feather="circle"></i></span>
                             <span class="has-text-weight-bold">

@@ -69,9 +69,23 @@ h1, h2 {
     border-radius: 50%;
     opacity: 0.4;
     z-index: 999;
+
+    animation: upDown 6s infinite;
 }
 
-.earth-nosotros {
+@keyframes upDown {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.earth-nosotros, .sombra-earth-nosotros {
     position: absolute;
     height: 128vh;
     width: 128vh;
@@ -82,13 +96,23 @@ h1, h2 {
     max-width: unset !important;
 }
 
+.sombra-earth-nosotros {
+    background: linear-gradient(100deg, rgba(255,255,255,0) 42%, rgba(0,0,0,0.8791688550420168) 84%);
+}
+
+@media only screen and (max-width: 1215px) {
+    .sombra-earth-nosotros {
+        background: linear-gradient(230deg, rgba(255,255,255,0) 42%, rgba(0,0,0,0.8791688550420168) 84%);
+    }
+}
+
 .sistema-solar {
     position: absolute;
     pointer-events: none;
     height: 130vh;
     width: 130vh;
     left: calc(50vw - 65vh);
-    top: 0;
+    top: 2%;
     overflow: hidden;
 
     animation: showSelf 2s;

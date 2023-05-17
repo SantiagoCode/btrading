@@ -1,13 +1,13 @@
-.formulario {
+.formulario, .formularioServicios {
     width: clamp(270px, 60%, 800px);
 
     .form-item, .form-item-textarea {
-        border-radius: 10px;
         
         input {
             background: transparent !important;
             border: none !important;
             border-bottom: 2px solid $primary !important;
+            border-radius: 0 !important;
             
             &::placeholder {
                 color: $light !important;
@@ -17,6 +17,7 @@
         textarea {
             background: transparent !important;
             border: 2px solid $primary;
+            border-radius: 10px;
                         
             &::placeholder {
                 color: $light !important;

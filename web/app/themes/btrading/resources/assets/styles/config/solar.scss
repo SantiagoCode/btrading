@@ -43,7 +43,7 @@
  
  h1.calculate,
   .is-fluid-1.calculate {
-   @include calculate-font-size( $main-title-base, 5cqi );
+   @include calculate-font-size( $main-title-base, 6cqi );
  }
  
  h2.calculate,
@@ -67,7 +67,7 @@
  
    &:hover {
      color: $font-color !important;
-     transform: rotate(-3deg);
+     transform: scale(0.9);
      transition: .3s;
    }
  }

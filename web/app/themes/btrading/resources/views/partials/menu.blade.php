@@ -22,15 +22,15 @@
           </div>
           <div class="column is-4">
             <div data-inertia data-inertia-reveal data-inertia-delay="100"  class="title is-7">Btrading</div>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="200" href="/como-llevamos-la-tecnologia-a-las-comunidades" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block">Influencers</a>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="300"  href="/blog" data-cursor-text="Ir al Blog" class="is-size-7 is-block">- Conecta con tu audiencia de manera auténtica y efectiva. </a>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="200" href="/como-llevamos-la-tecnologia-a-las-comunidades" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block">Afiliaciones</a>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="300"  href="/blog" data-cursor-text="Ir al Blog" class="is-size-7 is-block">- Haz crecer tus ingresos con la afiliación. </a>
+            <a  data-inertia data-inertia-reveal data-inertia-delay="200" href="/como-llevamos-la-tecnologia-a-las-comunidades" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block has-margin-bottom-10">Influencers</a>
+            <a  data-inertia data-inertia-reveal data-inertia-delay="300"  href="/blog" data-cursor-text="Ir al Blog" class="is-size-7 is-block has-margin-bottom-30">- Conecta con tu audiencia de manera auténtica y efectiva.</a>
+            <a  data-inertia data-inertia-reveal data-inertia-delay="200" href="/como-llevamos-la-tecnologia-a-las-comunidades" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block has-margin-bottom-10">Afiliaciones</a>
+            <a  data-inertia data-inertia-reveal data-inertia-delay="300"  href="/blog" data-cursor-text="Ir al Blog" class="is-size-7 is-block has-margin-bottom-30">- Haz crecer tus ingresos con la afiliación. </a>
             <div data-inertia data-inertia-reveal data-inertia-delay="400"  data-inertia data-inertia-reveal data-inertia-delay="500"  class="title is-7 has-margin-bottom-10 has-margin-top-30">Visítenos</div>
             <a  data-inertia data-inertia-reveal data-inertia-delay="500" class="is-block" href="https://maps.google.es/maps?daddr=CARRERA%207%2071%2052%20TO%20A%20OF%20504,BOGOTA%20-%20BOGOTA,%20Colombia" target="_blank">Carrera 7 # 71 - 52 Torre B Piso 15, Bogota</a>
             <div data-inertia data-inertia-reveal data-inertia-delay="600"  class="title is-7 has-margin-bottom-10 has-margin-top-30 ">O Escríbanos</div>
             <a class="is-block" data-inertia data-inertia-reveal data-inertia-delay="700"  href="mailto:info@latam.amerinode.com">info@latam.amerinode.com</a>
-          </div>
+          </div> 
         </div>
         
         <div class="hero-footer has-margin-left-30-touch" style="max-height: 150px">

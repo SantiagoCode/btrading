@@ -8,30 +8,3 @@
         }
     }
 }
-
-.formularioServicios {
-    width: clamp(270px, 60%, 800px);
-
-    .form-item, .form-item-textarea {
-        border-radius: 10px;
-        
-        input {
-            background: transparent !important;
-            border: none !important;
-            border-bottom: 2px solid $primary !important;
-            
-            &::placeholder {
-                color: $light !important;
-            }
-        }
-
-        textarea {
-            background: transparent !important;
-            border: 2px solid $primary;
-                        
-            &::placeholder {
-                color: $light !important;
-            }
-        }
-    }
-}

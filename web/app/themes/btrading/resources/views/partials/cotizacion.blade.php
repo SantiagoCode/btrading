@@ -1,4 +1,4 @@
-<div id="cotizacion" class="is-overlay is-disabled has-background-dark is-flex is-align-items-center is-justify-content-center" style="z-index: 99; position: fixed;">
+<div id="cotizacion" class="is-overlay is-disabled has-background-dark is-flex is-align-items-center is-justify-content-center" style="z-index: 99; position: fixed; transition: 0.6s;">
     <div class="container has-padding-10-touch">
         <h1 class="title has-text-primary">
             Hagamos tu cotizacion

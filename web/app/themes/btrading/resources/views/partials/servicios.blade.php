@@ -13,7 +13,7 @@
         </div>
 
         <div class="columns is-centered is-multiline">
-            <div class="column is-4-desktop is-12-mobile" data-inertia data-inertia-reveal data-inertia-delay="700">
+            <div class="column is-4-desktop is-12-mobile is-clickable" data-inertia data-inertia-reveal data-inertia-delay="700">
                 <div class="planet-button-dark with-content" href="">
                     <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                     <span class="">
@@ -34,7 +34,7 @@
                 </div>
             </div>
 
-            <div class="column is-4-desktop is-12-mobile" data-inertia data-inertia-reveal data-inertia-delay="800">
+            <div class="column is-4-desktop is-12-mobile is-clickable" data-inertia data-inertia-reveal data-inertia-delay="800">
                 <div class="planet-button-dark with-content" href="">
                     <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                     <span class="">
@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <div class="column is-4-desktop is-12-mobile" data-inertia data-inertia-reveal data-inertia-delay="900">
+            <div class="column is-4-desktop is-12-mobile is-clickable" data-inertia data-inertia-reveal data-inertia-delay="900">
                 <div class="planet-button-dark with-content" href="">
                     <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                     <span class="">

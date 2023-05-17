@@ -12,7 +12,7 @@
   </div>
 
   <div class="column is-4 is-flex is-align-items-center is-justify-content-end">
-    <div id="open_menu" class="call-to-action is-size-7 has-text-grey has-text-primary">
+    <div id="open_menu" class="call-to-action is-size-7 has-text-grey has-text-primary is-clickable">
       <span class="has-text-primary menuText">menú</span>
       <i class="icon has-margin-left-10">
         <img src="@asset('images/menu.png')" alt="menu">

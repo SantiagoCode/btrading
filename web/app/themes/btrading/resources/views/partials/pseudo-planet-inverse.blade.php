@@ -1,5 +1,6 @@
 <div style="position: absolute; top: 0px;">
     <img class="earth-nosotros" src="@asset('images/planet.png')" alt="planet">
+    <div class="sombra-earth-nosotros"></div>
 
     <div class="sistema-solar inverse">
 
