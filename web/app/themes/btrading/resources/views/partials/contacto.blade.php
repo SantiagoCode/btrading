@@ -1,18 +1,8 @@
 <section id="contacto" class="is-flex is-relative is-align-items-center has-background-dark is-full-height is-dark" data-cursor-text="Enviar">
 
 
-    <div class="fondo-contacto" style="
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;">
-        
-        <img src="@asset('images/fondo-contacto.png')" alt="" class="" style="
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            opacity: 0.5;">
+    <div class="fondo-contacto" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;">
+        <img src="@asset('images/fondo-contacto.png')" alt="" class="" style="object-fit: cover; width: 100%; height: 100%; opacity: 0.5;">
     </div>
 
 
@@ -31,7 +21,7 @@
 
         </div>
 
-        <form action="" id="form" class="formulario">
+        <form action="" id="formMessage" class="formulario">
 
             <div class="form-item has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="500">
                 <label for="name"></label>
@@ -51,6 +41,8 @@
                 <textarea class="has-text-light has-padding-top-20 has-padding-bottom-20 has-padding-left-40 has-padding-right-40" name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
             </div>
 
+            <input type="hidden" name="postType" value="mensajes">
+
             <div class="form-item-radiobtn has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="900">
                 <div class="is-flex is-align-items-center has-margin-bottom-10">
                     <input class="has-text-primary" type="checkbox" id="aceptoNotificaciones" name="opciones-form" value="aceptoNotificaciones">
@@ -63,10 +55,10 @@
                 </div>
             </div>
 
-            <button class="btnSubmit has-text-light" data-inertia data-inertia-reveal data-inertia-delay="900">
+            <div class="isMessage btnSubmit btnSubmitContacto-V2 has-text-light" role="message" data-inertia data-inertia-reveal data-inertia-delay="900">
                 <span>Contactanos ahora</span>
                 <span class="has-text-primary">*</span>
-            </button>
+            </div>
         </form> 
 
     </div>

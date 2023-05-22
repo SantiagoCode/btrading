@@ -145,6 +145,98 @@ add_action( 'pre_get_posts', function( $query ){
     }
 } );
 
+add_action( 'wp_ajax_nopriv_procesar_formulario', function(){
+    $postType = $_POST['postType']; // Obtener el valor enviado en el campo 'para' del formulario
+
+    if ($postType === 'mensajes') {
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $message = $_POST['message'];
+    
+        $post_id = wp_insert_post(array(
+            'post_title' => $name . " - " . $email,
+            'post_type' => 'mensajes',
+        ));
+    
+        update_post_meta($post_id, 'name', $name);
+        update_post_meta($post_id, 'email', $email);
+        update_post_meta($post_id, 'phone', $phone);
+        update_post_meta($post_id, 'message', $message);
+
+        // var_dump("mensaje");
+
+    } elseif ($postType === 'cotizacion') {
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $message = $_POST['message'];
+    
+        $post_id = wp_insert_post(array(
+            'post_title' => $name . " - " . $email,
+            'post_type' => 'cotizaciones',
+        ));
+    
+        update_post_meta($post_id, 'name', $name);
+        update_post_meta($post_id, 'email', $email);
+        update_post_meta($post_id, 'phone', $phone);
+        update_post_meta($post_id, 'message', $message);
+
+        // var_dump("cotizacion");
+        
+    }
+
+    wp_die(); // Terminar la ejecución
+} );
+
+add_action( 'wp_ajax_procesar_formulario', function(){
+    $postType = $_POST['postType']; // Obtener el valor enviado en el campo 'para' del formulario
+
+    if ($postType === 'mensajes') {
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $message = $_POST['message'];
+    
+        $post_id = wp_insert_post(array(
+            'post_title' => $name . " - " . $email,
+            'post_type' => 'mensajes',
+        ));
+    
+        update_post_meta($post_id, 'name', $name);
+        update_post_meta($post_id, 'email', $email);
+        update_post_meta($post_id, 'phone', $phone);
+        update_post_meta($post_id, 'message', $message);
+
+        // var_dump("mensaje");
+
+    } elseif ($postType === 'cotizacion') {
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $message = $_POST['message'];
+    
+        $post_id = wp_insert_post(array(
+            'post_title' => $name . " - " . $email,
+            'post_type' => 'cotizaciones',
+        ));
+    
+        update_post_meta($post_id, 'name', $name);
+        update_post_meta($post_id, 'email', $email);
+        update_post_meta($post_id, 'phone', $phone);
+        update_post_meta($post_id, 'message', $message);
+
+        // var_dump("cotizacion");
+        
+    }
+
+    wp_die(); // Terminar la ejecución
+} );
+
 //the_breadcrumb
 include('Setup/breadcrumbs.php');
 //Mailer-3000

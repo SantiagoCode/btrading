@@ -3,6 +3,7 @@
         <h1 class="title has-text-primary">
             Hagamos tu cotizacion
         </h1>
+
         <form action="" id="formServicios" class="formularioServicios">
 
             <div class="columns is-multiline has-margin-bottom-20">
@@ -27,11 +28,11 @@
             </div>
 
             <div class="columns is-multiline has-margin-bottom-20 has-padding-left-10-touch" style="justify-content: space-between">
-                <div class="planet-button-primary is-size-6 is-size-6-fullhd over-overlay has-margin-top-30 has-font-weight-bold" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
+                <div id="btnSubmitCotizacion" class="isCotizacion planet-button-primary is-clickable is-size-6 is-size-6-fullhd over-overlay has-margin-top-30 has-font-weight-bold" role="cotizacion" data-inertia data-inertia-reveal data-inertia-delay="200">
                     <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                     <span class="">Cotizar ahora</span>
                 </div>
-                <div id="closeServicios" class="planet-button-primary is-size-7 is-size-6-fullhd over-overlay has-margin-top-30 has-font-weight-bold" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
+                <div id="closeServicios" class="planet-button-primary is-clickable is-size-7 is-size-6-fullhd over-overlay has-margin-top-30 has-font-weight-bold" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
                     <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
                     <span class="">Cerrar cotizacion</span>
                 </div>
