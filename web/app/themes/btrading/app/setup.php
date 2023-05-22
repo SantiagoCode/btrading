@@ -160,35 +160,29 @@ add_action( 'wp_ajax_nopriv_procesar_formulario', function(){
             'post_type' => 'mensajes',
         ));
     
-        update_post_meta($post_id, 'name', $name);
+        update_post_meta($post_id, 'nombre', $name);
         update_post_meta($post_id, 'email', $email);
-        update_post_meta($post_id, 'phone', $phone);
-        update_post_meta($post_id, 'message', $message);
-
-        // var_dump("mensaje");
+        update_post_meta($post_id, 'telefono', $phone);
+        update_post_meta($post_id, 'mensaje', $message);
 
     } elseif ($postType === 'cotizacion') {
 
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $message = $_POST['message'];
+        $company = $_POST['company'];
+        $message = $_POST['details'];
     
         $post_id = wp_insert_post(array(
             'post_title' => $name . " - " . $email,
             'post_type' => 'cotizaciones',
         ));
     
-        update_post_meta($post_id, 'name', $name);
+        update_post_meta($post_id, 'nombre', $name);
         update_post_meta($post_id, 'email', $email);
-        update_post_meta($post_id, 'phone', $phone);
-        update_post_meta($post_id, 'message', $message);
-
-        // var_dump("cotizacion");
+        update_post_meta($post_id, 'company', $company);
+        update_post_meta($post_id, 'mensaje', $message);
         
     }
-
-    wp_die(); // Terminar la ejecución
 } );
 
 add_action( 'wp_ajax_procesar_formulario', function(){
@@ -206,35 +200,29 @@ add_action( 'wp_ajax_procesar_formulario', function(){
             'post_type' => 'mensajes',
         ));
     
-        update_post_meta($post_id, 'name', $name);
+        update_post_meta($post_id, 'nombre', $name);
         update_post_meta($post_id, 'email', $email);
-        update_post_meta($post_id, 'phone', $phone);
-        update_post_meta($post_id, 'message', $message);
-
-        // var_dump("mensaje");
+        update_post_meta($post_id, 'telefono', $phone);
+        update_post_meta($post_id, 'mensaje', $message);
 
     } elseif ($postType === 'cotizacion') {
 
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $message = $_POST['message'];
+        $company = $_POST['company'];
+        $message = $_POST['details'];
     
         $post_id = wp_insert_post(array(
             'post_title' => $name . " - " . $email,
             'post_type' => 'cotizaciones',
         ));
     
-        update_post_meta($post_id, 'name', $name);
+        update_post_meta($post_id, 'nombre', $name);
         update_post_meta($post_id, 'email', $email);
-        update_post_meta($post_id, 'phone', $phone);
-        update_post_meta($post_id, 'message', $message);
-
-        // var_dump("cotizacion");
+        update_post_meta($post_id, 'company', $company);
+        update_post_meta($post_id, 'mensaje', $message);
         
     }
-
-    wp_die(); // Terminar la ejecución
 } );
 
 //the_breadcrumb

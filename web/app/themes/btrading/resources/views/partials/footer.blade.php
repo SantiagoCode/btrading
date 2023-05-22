@@ -7,36 +7,37 @@
 
   <div class="container">
     
-    <img class="has-margin-bottom-40-desktop has-margin-bottom-20-touch" src="@asset('images/logo.png')" alt="logo btrading">
+    <img class="has-margin-bottom-40-desktop has-margin-bottom-20-touch" src="{!!get_field('footer_logo', 'options')!!}" alt="logo btrading">
     
     <h1 class="calculate has-text-light has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="200">
-      ¿Qué esperas para cambiar tu futuro financiero?
+      {!!get_field('footer_title', 'options')!!}
     </h1>
 
     <div class="columns redes is-mobile has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="300">
-      <a class="column">
-        <img src="@asset('images/icono-youtube.png')" alt="Youtube">
+   
+      @fields('footer_social_repetidor', 'options')
+      <a href="@sub('footer_social_link', 'url')" class="column">
+        <img src="@sub('footer_social_logo')" alt="social media">
       </a>
-      <a class="column">
-        <img src="@asset('images/icono-facebook.png')" alt="Facebook">
-      </a>
-      <a class="column">
-        <img src="@asset('images/icono-instagram.png')" alt="Instagram">
-      </a>
+      @endfields
+   
     </div>
 
     <div class="politicasyderechos" data-inertia data-inertia-reveal data-inertia-delay="400">
       <a class="legalidades has-margin-right-40 has-text-light">
-        Política de privacidad
+        {!!get_field('footer_logo', 'options')!!}
       </a>
       <a class="legalidades has-margin-right-40 has-text-light">
-        Aviso legal
+        {!!get_field('footer_logo', 'options')!!}      
       </a>
       <a class="legalidades has-margin-right-40 has-text-light">
-        Política de cookies
+        {!!get_field('footer_logo', 'options')!!}
       </a>
       <a class="legalidades has-text-light">
-        Copyright © 2023. Btrading Media. Built by <span class="has-text-weight-bold">Movida Company™️</span> .
+        {!!get_field('footer_logo', 'options')!!}
+        <span class="has-text-weight-bold">
+          {!!get_field('footer_logo', 'options')!!}
+        </span> .
       </a>
     </div>
 

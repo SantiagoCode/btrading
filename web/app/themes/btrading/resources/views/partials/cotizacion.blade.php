@@ -19,13 +19,15 @@
 
             <div class="form-item has-margin-bottom-20" data-inertia data-inertia-reveal data-inertia-delay="700">
                 <label class="has-text-dark" for="Company"></label>
-                <input class="has-text-light has-padding-top-20 has-padding-bottom-20 has-padding-left-40 has-padding-right-40" type="tel" name="Company" id="Company" placeholder="Compañia">
+                <input class="has-text-light has-padding-top-20 has-padding-bottom-20 has-padding-left-40 has-padding-right-40" type="tel" name="company" id="Company" placeholder="Compañia">
             </div>
 
             <div class="form-item-textarea has-margin-bottom-20" data-inertia data-inertia-reveal data-inertia-delay="800">
                 <label class="has-text-dark" for="details"></label>
                 <textarea class="has-text-light has-padding-top-20 has-padding-bottom-20 has-padding-left-40 has-padding-right-40" name="details" id="details" cols="30" rows="5" placeholder="Detalles del proyecto"></textarea>
             </div>
+            
+            <input type="hidden" name="postType" value="cotizacion">
 
             <div class="columns is-multiline has-margin-bottom-20 has-padding-left-10-touch" style="justify-content: space-between">
                 <div id="btnSubmitCotizacion" class="isCotizacion planet-button-primary is-clickable is-size-6 is-size-6-fullhd over-overlay has-margin-top-30 has-font-weight-bold" role="cotizacion" data-inertia data-inertia-reveal data-inertia-delay="200">
