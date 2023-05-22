@@ -9,11 +9,11 @@
 
                 <div class="planet-button-light is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30 has-text-weight-bold" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
                     <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
-                    <span class="">Nosotros</span>
+                    <span class="">{!!get_field('nosotros_subtitle', 'options')!!}</span>
                 </div>
 
                 <h1 class="calculate has-text-light has-margin-bottom-40" data-inertia data-inertia-reveal data-inertia-delay="400">
-                    Filosofía que nos une.-
+                    {!!get_field('nosotros_title', 'options')!!}
                 </h1>
 
             </div>
@@ -26,7 +26,7 @@
                         <span class="has-text-weight-bold">
                         </span>
                         <p class="servicios-content">
-                            Btrading se ha convertido en el centro de referencia del desarrollo de oportunidades de negocio en el mundo del trading y las inversiones financieras.
+                            {!!get_field('nosotros_content_a', 'options')!!}
                         </p>
                     </span>
                 </div>
@@ -37,7 +37,7 @@
                         <span class="has-text-weight-bold">
                         </span>
                         <p class="servicios-content">
-                            Nuestra misión es ayudar a los profesionales de la inversión y el trading con su marketing y desarrollo para que se enfoquen en aportar valor al mercado mediante la educación financiera y adopción de nuevas tecnologías.
+                            {!!get_field('nosotros_content_b', 'options')!!}
                         </p>
                     </span>
                 </div>

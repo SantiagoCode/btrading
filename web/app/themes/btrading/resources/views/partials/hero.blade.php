@@ -7,11 +7,11 @@
 
         <div class="planet-button-light is-size-7 is-size-6-fullhd over-overlay has-margin-bottom-30 has-text-weight-bold" href="" data-inertia data-inertia-reveal data-inertia-delay="200">
           <span class="icon has-margin-right-20"><i data-feather="circle"></i></span>
-          <span class="">Esto es BTrading</span>
+          <span class="">{!!get_field('hero_subtitle', 'options')!!}</span>
         </div>
 
         <h1 class="calculate has-text-light has-margin-bottom-40" data-inertia data-inertia-reveal data-inertia-delay="400">
-          Llevando la <span class="has-text-weight-bold">Web3</span> Adelante
+          {!!get_field('hero_title_part_a', 'options')!!}<span class="has-text-weight-bold">{!!get_field('hero_title_part_b', 'options')!!}</span> {!!get_field('hero_title_part_c', 'options')!!}
         </h1>
 
         <div class="control-buttons columns is-multiline" data-inertia data-inertia-reveal data-inertia-delay="700">
@@ -21,7 +21,7 @@
                   <span class="has-text-weight-bold">
                   </span>
                   <p class="servicios-content">
-                    La única agencia de marketing especializada en el sector de las inversiones financieras y el trading
+                    {!!get_field('hero_content_a', 'options')!!}
                   </p>
               </span>
           </div>
@@ -32,7 +32,7 @@
                   <span class="has-text-weight-bold">
                   </span>
                   <p class="servicios-content">
-                    Con más de 9 años de experiencia para hacer crecer a tu negocio.
+                    {!!get_field('hero_content_a', 'options')!!}
                   </p>
               </span>
           </div>
@@ -41,7 +41,7 @@
       </div>
 
       <div class="conjunto-hero is-flex is-justify-content-center" data-inertia data-inertia-speed="-1" data-inertia-reveal data-inertia-delay="700">
-        <img src="@asset('images/conjunto-hero.png')" alt="img">
+        <img src="{!!get_field('hero_footer_img', 'options')!!}" alt="img">
       </div>
 
 </section>
