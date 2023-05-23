@@ -23,7 +23,8 @@
 
         </div>
 
-        <form action="" id="formMessage" class="formulario">
+        <div class="columns is-multiline">
+        <form action="" id="formMessage" class="formulario column">
 
             <div class="form-item has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="500">
                 <label for="name"></label>
@@ -61,13 +62,23 @@
                 </div>
             </div>
 
-            <div class="isMessage btnSubmit btnSubmitContacto-V2 has-text-light" role="message" data-inertia data-inertia-reveal data-inertia-delay="900">
+            <div class="isMessage btnSubmit submitContacto has-text-light" role="message" data-inertia data-inertia-reveal data-inertia-delay="900">
                 <span>
                     {!!get_field('contacto_btn_send', 'options')!!}
                 </span>
                 <span class="has-text-primary">*</span>
             </div>
         </form> 
+
+        <div class="column is-4-desktop is-12-touch is-flex is-align-items-center is-justify-content-end">
+            <div class="">
+                <h4 id="contenedorFeedBack" class="has-text-light has-text-centered" name="marco">
+                    {{-- Valor del campo de compañia:', companyInput.value --}}
+                    {{-- Aca inserto la respuesta de la validacion con js --}}
+                </h4>
+            </div>
+        </div>
+        </div>
 
     </div>
 

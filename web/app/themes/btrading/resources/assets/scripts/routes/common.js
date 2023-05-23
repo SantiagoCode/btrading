@@ -92,9 +92,7 @@ export default {
 
       // data submit
       setTimeout(() => {
-        const btnSubmitContacto = document.querySelector(
-          '.btnSubmitContacto-V2'
-        );
+        const btnSubmitContacto = document.querySelector('.submitContacto');
         btnSubmitContacto.addEventListener(
           'click',
           () => chooseData(btnSubmitContacto),
@@ -102,17 +100,89 @@ export default {
         );
       }, 1000);
 
-      const chooseData = function(el) {
-        if (el.classList.contains('isMessage')) {
-          let formData = new FormData(document.querySelector('#formMessage'));
-          sendData(formData);
+      const chooseData = function(e) {
+        if (e.classList.contains('isMessage')) {
+          let form = document.querySelector('#formMessage');
+          validacion(form);
         } else if (e.classList.contains('isCotizacion')) {
-          let formData = new FormData(document.querySelector('#formServicios'));
-          sendData(formData);
+          let form = document.querySelector('#formServicios');
+          validacion(form);
         }
       };
 
-      const sendData = chosenForm => {
+      const validacion = form => {
+        // Verificar campo de nombre
+        const nameInput = form.querySelector('input[name="name"]');
+        if (nameInput.value.trim() === '') {
+          feedBack('Necesitas llenar el campo de nombre.');
+          return;
+        } else if (/\d/.test(nameInput.value)) {
+          feedBack(
+            'El campo de nombre no puede contener caracteres numéricos.'
+          );
+          return;
+        } else {
+          // console.log('Valor del campo de nombre:', nameInput.value);
+        }
+
+        // Verificar campo de email
+        const emailInput = form.querySelector('input[name="email"]');
+        if (emailInput.value.trim() === '') {
+          feedBack('Necesitas llenar el campo de email.');
+          return;
+        } else if (
+          !emailInput.value.includes('@') ||
+          !emailInput.value.endsWith('.com')
+        ) {
+          feedBack(
+            'El campo de email no es válido. Debe incluir "@" y terminar en .com'
+          );
+          return;
+        } else {
+          // console.log('Valor del campo de email:', emailInput.value);
+        }
+
+        // Verificar campo de teléfono
+        const phoneInput = form.querySelector('input[name="phone"]');
+        if (phoneInput) {
+          if (phoneInput.value.trim() === '') {
+            feedBack('Necesitas llenar el campo de teléfono.');
+            return;
+          } else if (!/^\d+$/.test(phoneInput.value)) {
+            feedBack(
+              'El campo de teléfono solo puede contener caracteres numéricos.'
+            );
+            return;
+          } else {
+            // console.log('Valor del campo de teléfono:', phoneInput.value);
+          }
+        }
+
+        // Verificar campo de teléfono
+        const companyInput = form.querySelector('input[name="company"]');
+        if (companyInput) {
+          if (companyInput.value.trim() === '') {
+            feedBack('Necesitas llenar el campo de compañia.');
+            return;
+          } else {
+            // console.log('Valor del campo de compañia:', companyInput.value);
+          }
+        }
+
+        // Verificar campo de teléfono
+        const messageInput = form.querySelector('textarea[name="message"]');
+        if (messageInput.value.trim() === '') {
+          feedBack('Necesitas llenar el campo de mensaje.');
+          return;
+        } else {
+          // console.log('Valor del campo de mensaje:', messageInput.value);
+        }
+
+        let formData = new FormData(form);
+        sendData(form, formData);
+      };
+
+      const sendData = (form, chosenForm) => {
         chosenForm.append('action', 'procesar_formulario');
 
         fetch(window.location.origin + '/wp/wp-admin/admin-ajax.php', {
@@ -124,12 +194,33 @@ export default {
           .then(response => response.text())
           .then(data => {
             if (data == 0) {
-              console.log('Registro exitoso');
+              console.log('Registro Exitoso.');
             } else {
-              console.log('Registro no exitoso');
+              console.log('Registro fallido.');
             }
           })
-          .catch(err => console.log(err));
+          .then(() => {
+            form.querySelector('input[name="name"]').value = '';
+            form.querySelector('input[name="email"]').value = '';
+            form.querySelector('textarea[name="message"]').value = '';
+
+            if (form.querySelector('input[name="phone"]')) {
+              form.querySelector('input[name="phone"]').value = '';
+            } else if (form.querySelector('input[name="company"]')) {
+              form.querySelector('input[name="company"]').value = '';
+            }
+
+            feedBack('Registro Exitoso.');
+          })
+          .catch(err => {
+            console.log(err);
+            feedBack('Registro Exitoso.');
+          });
+      };
+
+      const feedBack = retorno => {
+        const contenedor = document.querySelector('#contenedorFeedBack');
+        contenedor.innerHTML = retorno;
       };
     };
   },

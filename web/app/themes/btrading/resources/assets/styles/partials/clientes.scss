@@ -5,6 +5,7 @@
   height: 20vh;
   width: fit-content;
   z-index: 3;
+  pointer-events: none;
 
   h1 {
     font-size: calc(2rem + 17cqi);

@@ -24,19 +24,27 @@
     </div>
 
     <div class="politicasyderechos" data-inertia data-inertia-reveal data-inertia-delay="400">
-      <a class="legalidades has-margin-right-40 has-text-light">
-        {!!get_field('footer_logo', 'options')!!}
+      
+      @set($footer_politica_privacidad, get_field('footer_politica_privacidad', 'options'))
+      <a href="{{$footer_politica_privacidad['url']}}" class="legalidades has-margin-right-40 has-text-light">
+        {{$footer_politica_privacidad['title']}}
       </a>
-      <a class="legalidades has-margin-right-40 has-text-light">
-        {!!get_field('footer_logo', 'options')!!}      
+      
+      @set($footer_aviso_legal, get_field('footer_aviso_legal', 'options'))
+      <a href="{{$footer_aviso_legal['url']}}" class="legalidades has-margin-right-40 has-text-light">
+        {{$footer_aviso_legal['title']}}
       </a>
-      <a class="legalidades has-margin-right-40 has-text-light">
-        {!!get_field('footer_logo', 'options')!!}
+      
+      @set($footer_politicas_privacidad, get_field('footer_politicas_privacidad', 'options'))
+      <a href="{{$footer_politicas_privacidad['url']}}" class="legalidades has-margin-right-40 has-text-light">
+        {{$footer_politicas_privacidad['title']}}
       </a>
-      <a class="legalidades has-text-light">
-        {!!get_field('footer_logo', 'options')!!}
+      
+      @set($footer_copyright, get_field('footer_copyright', 'options'))
+      <a href="{{$footer_copyright['url']}}" class="legalidades has-text-light">
+        {{$footer_copyright['title']}}
         <span class="has-text-weight-bold">
-          {!!get_field('footer_logo', 'options')!!}
+          {!!get_field('footer_company_bold', 'options')!!}
         </span> .
       </a>
     </div>

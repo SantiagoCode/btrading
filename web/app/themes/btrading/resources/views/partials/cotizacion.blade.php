@@ -23,8 +23,8 @@
             </div>
 
             <div class="form-item-textarea has-margin-bottom-20" data-inertia data-inertia-reveal data-inertia-delay="800">
-                <label class="has-text-dark" for="details"></label>
-                <textarea class="has-text-light has-padding-top-20 has-padding-bottom-20 has-padding-left-40 has-padding-right-40" name="details" id="details" cols="30" rows="5" placeholder="Detalles del proyecto"></textarea>
+                <label class="has-text-dark" for="message"></label>
+                <textarea class="has-text-light has-padding-top-20 has-padding-bottom-20 has-padding-left-40 has-padding-right-40" name="message" id="details" cols="30" rows="5" placeholder="Detalles del proyecto"></textarea>
             </div>
             
             <input type="hidden" name="postType" value="cotizacion">

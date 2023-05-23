@@ -170,7 +170,7 @@ add_action( 'wp_ajax_nopriv_procesar_formulario', function(){
         $name = $_POST['name'];
         $email = $_POST['email'];
         $company = $_POST['company'];
-        $message = $_POST['details'];
+        $message = $_POST['message'];
     
         $post_id = wp_insert_post(array(
             'post_title' => $name . " - " . $email,
@@ -210,7 +210,7 @@ add_action( 'wp_ajax_procesar_formulario', function(){
         $name = $_POST['name'];
         $email = $_POST['email'];
         $company = $_POST['company'];
-        $message = $_POST['details'];
+        $message = $_POST['message'];
     
         $post_id = wp_insert_post(array(
             'post_title' => $name . " - " . $email,
