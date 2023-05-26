@@ -3,7 +3,7 @@
 @endif
 
 
-<section id="footer" class="footer is-full-height has-background-dark">
+<section id="footer" class="footer is-full-height has-background-dark is-flex is-align-items-center">
 
   <div class="container">
     
@@ -35,9 +35,9 @@
         {{$footer_aviso_legal['title']}}
       </a>
       
-      @set($footer_politicas_privacidad, get_field('footer_politicas_privacidad', 'options'))
-      <a href="{{$footer_politicas_privacidad['url']}}" class="legalidades has-margin-right-40 has-text-light">
-        {{$footer_politicas_privacidad['title']}}
+      @set($footer_politica_cookies, get_field('footer_politica_cookies', 'options'))
+      <a href="{{$footer_politica_cookies['url']}}" class="legalidades has-margin-right-40 has-text-light">
+        {{$footer_politica_cookies['title']}}
       </a>
       
       @set($footer_copyright, get_field('footer_copyright', 'options'))

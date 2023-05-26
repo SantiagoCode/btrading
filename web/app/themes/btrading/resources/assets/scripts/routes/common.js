@@ -219,8 +219,16 @@ export default {
       };
 
       const feedBack = retorno => {
-        const contenedor = document.querySelector('#contenedorFeedBack');
+        let contenedor = document.querySelector('#contenedorFeedBack');
         contenedor.innerHTML = retorno;
+
+        let contenedor2 = document.querySelector('#contenedorFeedBack2');
+        contenedor2.innerHTML = retorno;
+
+        setTimeout(() => {
+          contenedor.innerHTML = '';
+          contenedor2.innerHTML = '';
+        }, 2000);
       };
     };
   },

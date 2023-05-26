@@ -16,35 +16,56 @@
               @endif
             </div>
             <ul class="documents has-margin-top-70">
-              <li data-inertia data-inertia-reveal data-inertia-delay="800"><a data-cursor-text="+" href="/politica-privacidad" class="title is-5 has-text-weight-normal">Política de Privacidad</a></li>
-              <li data-inertia data-inertia-reveal data-inertia-delay="900" class="has-margin-top-10"><a data-cursor-text="+" href="/politica-calidad" class="title is-5 has-text-weight-normal">Política de Calidad</a></li>
+              <li data-inertia data-inertia-reveal data-inertia-delay="800">
+                @set($footer_politica_privacidad, get_field('footer_politica_privacidad', 'options'))
+                <a href="{{$footer_politica_privacidad['url']}}" data-cursor-text="+" class="legalidades has-margin-right-40 has-text-light title is-5 has-text-weight-normal">
+                  {{$footer_politica_privacidad['title']}}
+                </a>
+              </li>
+              <li data-inertia data-inertia-reveal data-inertia-delay="900" class="has-margin-top-10">
+                @set($footer_aviso_legal, get_field('footer_aviso_legal', 'options'))
+                <a href="{{$footer_aviso_legal['url']}}" data-cursor-text="+" class="legalidades has-margin-right-40 has-text-light title is-5 has-text-weight-normal">
+                  {{$footer_aviso_legal['title']}}
+                </a>
+              </li>
             </ul>
           </div>
           <div class="column is-4">
+
             <div data-inertia data-inertia-reveal data-inertia-delay="100"  class="title is-7">Btrading</div>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="200" href="/como-llevamos-la-tecnologia-a-las-comunidades" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block has-margin-bottom-10">Influencers</a>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="300"  href="/blog" data-cursor-text="Ir al Blog" class="is-size-7 is-block has-margin-bottom-30">- Conecta con tu audiencia de manera auténtica y efectiva.</a>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="200" href="/como-llevamos-la-tecnologia-a-las-comunidades" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block has-margin-bottom-10">Afiliaciones</a>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="300"  href="/blog" data-cursor-text="Ir al Blog" class="is-size-7 is-block has-margin-bottom-30">- Haz crecer tus ingresos con la afiliación. </a>
-            <div data-inertia data-inertia-reveal data-inertia-delay="400"  data-inertia data-inertia-reveal data-inertia-delay="500"  class="title is-7 has-margin-bottom-10 has-margin-top-30">Visítenos</div>
-            <a  data-inertia data-inertia-reveal data-inertia-delay="500" class="is-block" href="https://maps.google.es/maps?daddr=CARRERA%207%2071%2052%20TO%20A%20OF%20504,BOGOTA%20-%20BOGOTA,%20Colombia" target="_blank">Carrera 7 # 71 - 52 Torre B Piso 15, Bogota</a>
-            <div data-inertia data-inertia-reveal data-inertia-delay="600"  class="title is-7 has-margin-bottom-10 has-margin-top-30 ">O Escríbanos</div>
-            <a class="is-block" data-inertia data-inertia-reveal data-inertia-delay="700"  href="mailto:info@latam.amerinode.com">info@latam.amerinode.com</a>
+
+            @fields('menu_links_internal_pages', 'options')
+            <a href="@sub('menu_link', 'url')">
+              <p  data-inertia data-inertia-reveal data-inertia-delay="200" data-cursor="-inverse" data-cursor-text="Leer" class="title is-4 has-text-weight-light is-block has-margin-bottom-10">@sub('menu_text_a')</p>
+              <p  data-inertia data-inertia-reveal data-inertia-delay="400" data-cursor-text="Ir al Blog" class="is-size-7 is-block has-margin-bottom-30">@sub('menu_text_b')</p>
+            </a>
+            @endfields
+
+            @set($menu_visitanos_link, get_field('menu_visitanos_link', 'options'))
+            <div data-inertia data-inertia-reveal data-inertia-delay="600"  data-inertia data-inertia-reveal data-inertia-delay="500"  class="title is-7 has-margin-bottom-10 has-margin-top-30">{!!get_field('menu_visitanos', 'options')!!}</div>
+            <a  data-inertia data-inertia-reveal data-inertia-delay="600" class="is-block" href="{{$menu_visitanos_link['url']}}" target="_blank">
+              {{$menu_visitanos_link['title']}}
+            </a>
+
+            @set($menu_escribenos_link, get_field('menu_escribenos_link', 'options'))
+            <div data-inertia data-inertia-reveal data-inertia-delay="600"  class="title is-7 has-margin-bottom-10 has-margin-top-30 ">{!!get_field('menu_escribenos', 'options')!!}</div>
+            <a class="is-block" data-inertia data-inertia-reveal data-inertia-delay="600"  href="{{$menu_escribenos_link['url']}}">
+              {{$menu_escribenos_link['title']}}
+            </a>
           </div> 
+
         </div>
         
         <div class="hero-footer has-margin-left-30-touch" style="max-height: 150px">
             <div class="container">
               <div class="columns redes is-mobile has-margin-bottom-40-desktop has-margin-bottom-20-touch" data-inertia data-inertia-reveal data-inertia-delay="300">
-                <a class="column">
-                  <img src="@asset('images/icono-youtube.png')" alt="Youtube">
+            
+                @fields('footer_social_repetidor', 'options')
+                <a href="@sub('footer_social_link', 'url')" class="column">
+                  <img src="@sub('footer_social_logo')" alt="social media">
                 </a>
-                <a class="column">
-                  <img src="@asset('images/icono-facebook.png')" alt="Facebook">
-                </a>
-                <a class="column">
-                  <img src="@asset('images/icono-instagram.png')" alt="Instagram">
-                </a>
+                @endfields
+
               </div>
             </div>
         </div>

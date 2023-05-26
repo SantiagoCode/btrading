@@ -17,7 +17,7 @@
                 </span>
             </div>
 
-            <h1 class="calculate has-text-light has-margin-bottom-40" data-inertia data-inertia-reveal data-inertia-delay="400">
+            <h1 class="calculate has-text-light has-margin-bottom-40" >
                 {!!get_field('contacto_title', 'options')!!}
             </h1>
 

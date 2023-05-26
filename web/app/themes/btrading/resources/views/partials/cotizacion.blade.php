@@ -1,9 +1,10 @@
 <div id="cotizacion" class="is-overlay is-disabled has-background-dark is-flex is-align-items-center is-justify-content-center" style="z-index: 99; position: fixed; transition: 0.6s;">
     <div class="container has-padding-10-touch">
-        <h1 class="title has-text-primary">
+        <h1 class="title has-text-primary has-margin-bottom-80">
             Hagamos tu cotizacion
         </h1>
 
+        <div class="columns is-multiline">
         <form action="" id="formServicios" class="formularioServicios">
 
             <div class="columns is-multiline has-margin-bottom-20">
@@ -40,5 +41,15 @@
                 </div>
             </div>
         </form>
+        
+        <div class="column is-4-desktop is-12-touch is-flex is-align-items-center is-justify-content-end">
+            <div class="">
+                <h4 id="contenedorFeedBack2" class="has-text-light has-text-centered" name="marco">
+                    {{-- Valor del campo de compañia:', companyInput.value --}}
+                    {{-- Aca inserto la respuesta de la validacion con js --}}
+                </h4>
+            </div>
+        </div>
+        </div>
     </div>
 </div>
